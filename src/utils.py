@@ -22,7 +22,7 @@ def gram_matrix(x):
 
 
 def draw_styled_image(output):
-    styled_image = output[0].permute(1, 2, 0).detach()
+    styled_image = output[0].permute(1, 2, 0).cpu().detach()
     styled_image = styled_image * std + mean
     styled_image.clamp_(0, 1)
     
