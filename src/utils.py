@@ -1,0 +1,32 @@
+import torch
+from PIL import Image
+import matplotlib.pyplot as plt
+
+
+mean = torch.FloatTensor([[[0.485, 0.456, 0.406]]])
+std = torch.FloatTensor([[[0.229, 0.224, 0.225]]])
+
+
+def load_image(img_path, transform):
+    image = Image.open(img_path).convert('RGB')
+    image = transform(image).unsqueeze(0)
+    return image
+
+
+def gram_matrix(x):
+    n, c, h, w = x.shape
+    x = x.view(n*c, -1) # Flattening
+    G = torch.mm(x, x.t())
+    G = G.div(n*c*h*w) # Normalization
+    return G
+
+
+def draw_styled_image(output):
+    styled_image = output[0].permute(1, 2, 0).detach()
+    styled_image = styled_image * std + mean
+    styled_image.clamp_(0, 1)
+    
+    plt.figure(figsize=(6, 6))
+    plt.imshow(styled_image)
+    plt.axis("off")
+    plt.pause(0.01)
