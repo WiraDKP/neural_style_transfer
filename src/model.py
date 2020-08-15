@@ -1,12 +1,12 @@
 from torch import nn
-from torchvision.models import vgg19_bn
+from torchvision.models import vgg16
 
 
 class NeuralStyleTransfer(nn.Module):
     def __init__(self):
         super().__init__()
         
-        model = vgg19_bn(pretrained=True).eval()
+        model = vgg16(pretrained=True).eval()
         self.model = model.features
         self.freeze()
         
