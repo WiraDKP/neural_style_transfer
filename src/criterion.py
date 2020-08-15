@@ -2,7 +2,7 @@ from torch.nn.functional import mse_loss
 from src.utils import gram_matrix
 
 
-def criterion(content_features, style_features, output_contents, output_styles, content_weight=1, style_weight=1e5):
+def criterion(content_features, style_features, output_contents, output_styles, content_weight=1, style_weight=1e6):
     # Content Loss
     content_loss = 0
     for c, o in zip(content_features, output_contents):
