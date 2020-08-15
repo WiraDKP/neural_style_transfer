@@ -30,3 +30,4 @@ def draw_styled_image(output):
     plt.imshow(styled_image)
     plt.axis("off")
     plt.pause(0.01)
+    return styled_image
