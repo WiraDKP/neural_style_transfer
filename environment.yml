@@ -1,0 +1,31 @@
+name: style_transfer
+
+channels:
+- pytorch
+- conda-forge
+- anaconda 
+
+dependencies:
+# Essential
+- python==3.7.8
+- nb_conda_kernels==2.2.0
+- pip==20.2.1
+- ipython==7.1.1
+- tqdm==4.41.1
+# Data Science
+- numpy==1.19.1
+- scipy==1.5.2
+- pandas==1.1.0
+# Machine Learning
+- scikit-learn==0.23.2
+# Visualization
+- matplotlib==3.3.0
+- ipywidgets==7.4.2
+# Deep Learning
+- pytorch==1.5.1
+# Computer Vision
+- torchvision==0.6.1
+- pillow==7.2.0
+
+# - pip:
+#   - luwiji==1.1.8
