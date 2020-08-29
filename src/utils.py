@@ -13,10 +13,10 @@ def load_image(img_path, transform):
     return image
 
 
-def gram_matrix(x):
-    n, c, h, w = x.shape
-    x = x.view(n*c, -1) # Flattening
-    G = torch.mm(x, x.t())
+def gram_matrix(X):
+    n, c, h, w = X.shape
+    X = X.view(n*c, h*w) # Flattening
+    G = torch.mm(X, X.t())
     G = G.div(n*c*h*w) # Normalization
     return G
 
