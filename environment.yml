@@ -27,5 +27,5 @@ dependencies:
 - torchvision==0.6.1
 - pillow==7.2.0
 
-# - pip:
-#   - luwiji==1.1.8
+- pip:
+  - luwiji==1.1.8

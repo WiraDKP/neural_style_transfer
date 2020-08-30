@@ -2,8 +2,7 @@ import subprocess
 
 req = {
     "python", "tqdm", "nb_conda_kernels", "pip", "ipython", "numpy", "scipy", "pandas", 
-    "scikit-learn", "matplotlib", "seaborn", "ipywidgets", "statsmodels", "fbprophet",
-    "xgboost", "scikit-optimize", "jcopml", "luwiji", "pmdarima"
+    "scikit-learn", "matplotlib", "ipywidgets", "luwiji"
 }
 env_name = "style_transfer"
 working_folder = "neural_style_transfer"
