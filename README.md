@@ -85,4 +85,4 @@
 - [Lukisan oleh Delsy Syamsumar](http://artkimianto.blogspot.com/2010/02/pelukis-legendaris-delsy-syamsumar.html)
 http://harajukushina.blogspot.com/2014/02/gambar-lukisan-karya-seni-barli.html
 - Foto Najwa Shihab - IG: [@najwashihab](https://www.instagram.com/najwashihab/?hl=en)
-- [Doki-doki Literature Club Sketh](https://knowyourmeme.com/photos/1305762-doki-doki-literature-club)
+- [Doki-doki Literature Club Sketch](https://knowyourmeme.com/photos/1305762-doki-doki-literature-club)
